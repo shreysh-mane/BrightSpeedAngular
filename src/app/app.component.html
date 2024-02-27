@@ -1,0 +1,58 @@
+
+<!-- <app-register></app-register> -->
+
+
+<!-- Binding -->
+
+<!-- Interpolation -->
+<!-- one way data binding -->
+
+<h1>Hello {{userName}}</h1>
+
+<h2>{{2+2}}</h2>
+<h3>{{no}}</h3>
+
+<!-- <h3>{{no++}}</h3> Error -->
+
+<h3>{{getValue()}}</h3>
+
+
+<!-- Property Binding -->
+
+<h1 [class]="colorClass">Hello H1</h1>
+
+<img [src]="imageUrl" alt="">
+
+<h1 class="{{colorClass}}">Hello H1</h1>
+
+<input type="text" [disabled]="readOnly" placeholder="property binding">
+<input type="text" disabled="{{readOnly}}" placeholder="Interpolation">
+
+
+
+
+<!-- Event Binding -->
+
+<!-- Click -->
+<button (click)="printMessage(2,2)"> Click me please</button>
+
+<!-- keyup -->
+<br><br>
+<input type="text" #box1 (keyup)="demoFunc(box1.value)">
+
+<!-- keyup -->
+<br><br>
+<input type="text" #box2 (input)="demoFunc(box2.value)">
+
+
+<!-- mouseover -->
+<br>
+<h1 (mouseover)="demoFunc('abc')">Hello</h1>
+
+
+
+
+<!-- Task -->
+<!-- 1. Create a h1 tag with text Hello along with a button, When user clicks on that button chagne the text to bye with red color -->
+
+
