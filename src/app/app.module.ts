@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { TestModule } from './test/test.module';
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent
+    RegisterComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,

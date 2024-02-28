@@ -1,0 +1,40 @@
+<!-- <p>directives works!</p> -->
+
+<!-- Structural Directive -->
+
+<!-- ngIf -->
+
+<h1 *ngIf="displayMessage; else elseBlock">Ng if Demo</h1>
+
+<ng-template #elseBlock>
+<h2>
+    Con is false
+</h2>
+</ng-template>
+
+
+<!-- Task -->
+
+<!-- Create button to tobble the text content inside an element -->
+
+
+<!-- ngSwitch -->
+
+<div [ngSwitch]="selectedOption">
+<p *ngSwitchCase="'option1'">You selected option1</p>
+<p *ngSwitchCase="'option2'">You selected option2</p>
+<p *ngSwitchCase="'option3'">You selected option3</p>
+</div>
+
+
+<!-- Task -->
+<!-- Create 3 buttons with name Red, Yellow, Blue when user selectes red button show message like "You selected Red button" Do same for other buttons -->
+
+
+<!-- ngFor -->
+
+<ul>
+    <li *ngFor="let ele of demoArray">{{ele}}</li>
+</ul>
+
+<!-- Create an array of object name and age and print their values in list format -->
