@@ -12,6 +12,9 @@ export class DirectivesComponent {
   selectedOption="option2";
 
   demoArray:string[]=["A","b","c"];
-  
+
+
+  colRed:boolean=false;
+
 
 }

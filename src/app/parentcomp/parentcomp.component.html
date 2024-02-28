@@ -1,0 +1,7 @@
+<p>parentcomp works!</p>
+
+<app-childcomp [parentData]="msg" (childEve)="childData=$event"></app-childcomp>
+
+<h2>
+    {{childData}}
+</h2>

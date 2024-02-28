@@ -7,12 +7,21 @@ import { RegisterComponent } from './register/register.component';
 import { TestModule } from './test/test.module';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { AddTenPipe} from './pipes/addten.pipe';
+import { ParentcompComponent } from './parentcomp/parentcomp.component';
+import { ChildcompComponent } from './childcomp/childcomp.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    PipesComponent,
+    AddTenPipe,
+    ParentcompComponent,
+    ChildcompComponent,
+    
   ],
   imports: [
     BrowserModule,
