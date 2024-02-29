@@ -12,6 +12,9 @@ import { AddTenPipe} from './pipes/addten.pipe';
 import { ParentcompComponent } from './parentcomp/parentcomp.component';
 import { ChildcompComponent } from './childcomp/childcomp.component';
 import { HandelformComponent } from './handelform/handelform.component';
+import { Servicedemo1Component } from './servicedemo1/servicedemo1.component';
+import { Servicedemo2Component } from './servicedemo2/servicedemo2.component';
+import { UserService } from './services/userservice/user.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { HandelformComponent } from './handelform/handelform.component';
     ParentcompComponent,
     ChildcompComponent,
     HandelformComponent,
+    Servicedemo1Component,
+    Servicedemo2Component,
     
   ],
   imports: [
@@ -31,7 +36,7 @@ import { HandelformComponent } from './handelform/handelform.component';
     TestModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ UserService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

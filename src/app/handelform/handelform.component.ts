@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { User } from './User';
 
 
@@ -9,12 +9,23 @@ import { User } from './User';
   templateUrl: './handelform.component.html',
   styleUrls: ['./handelform.component.css']
 })
-export class HandelformComponent {
+export class HandelformComponent implements OnInit{
 // userObj={
 //   name:"",
 //   email:"",
 //   pass:""
 // }
+
+ngOnInit(){
+  console.log("Inside OnInit");
+}
+
+
+constructor(){
+  console.log("Inside Constructor");
+  
+}
+
 
 user!:User;
 
