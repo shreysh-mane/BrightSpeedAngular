@@ -1,0 +1,16 @@
+<p>handelform works!</p>
+
+<form #myForm="ngForm" (ngSubmit)="getData(myForm.value)">
+
+<input type="text" ngModel name="name" placeholder="Enter name">
+<br>
+<input type="email" ngModel name="email" placeholder="Enter email">
+<br>
+<input type="text" ngModel name="pass" placeholder="Enter pass">
+<br>
+<button type="submit"> Submit</button>
+
+
+</form>
+
+

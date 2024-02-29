@@ -11,6 +11,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { AddTenPipe} from './pipes/addten.pipe';
 import { ParentcompComponent } from './parentcomp/parentcomp.component';
 import { ChildcompComponent } from './childcomp/childcomp.component';
+import { HandelformComponent } from './handelform/handelform.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ChildcompComponent } from './childcomp/childcomp.component';
     AddTenPipe,
     ParentcompComponent,
     ChildcompComponent,
+    HandelformComponent,
     
   ],
   imports: [
