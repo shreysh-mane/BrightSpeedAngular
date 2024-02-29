@@ -22,7 +22,16 @@ export class Servicedemo1Component {
   }
 
   showData(){
-    this.users=this._userService.getUsers();
+    
+    this._userService.getUsers().subscribe(
+      (data:User[])=>{
+        this.users=data;
+      },
+      (error)=>{
+        console.log("Error while feching user data",error);
+        
+      });
+    
   }
 
 

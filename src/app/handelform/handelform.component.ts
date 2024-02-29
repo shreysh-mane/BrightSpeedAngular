@@ -40,7 +40,7 @@ getData(userData:any){
 
 
   // Using Class
-  this.user= new User(userData.name,userData.email,0);
+  this.user= new User(0,userData.name,userData.email,0);
   console.log(this.user.name);
   console.log(this.user.email);
   // console.log(user.age);

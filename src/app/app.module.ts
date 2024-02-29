@@ -15,6 +15,8 @@ import { HandelformComponent } from './handelform/handelform.component';
 import { Servicedemo1Component } from './servicedemo1/servicedemo1.component';
 import { Servicedemo2Component } from './servicedemo2/servicedemo2.component';
 import { UserService } from './services/userservice/user.service';
+import {HttpClientModule} from '@angular/common/http';
+ 
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { UserService } from './services/userservice/user.service';
     BrowserModule,
     AppRoutingModule,
     TestModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [ UserService ],
   bootstrap: [AppComponent]
